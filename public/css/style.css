@@ -1,0 +1,200 @@
+
+*{
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+}
+
+.top_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 11vh;
+    /* border: 1px solid black; */
+    background-color: rgb(255, 252, 252);
+    border-bottom: 2px solid rgb(219, 212, 212);
+    position: fixed;
+    top: 0px;
+    z-index: +50;
+}
+
+.top_header_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_headLefText >h1{
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 17px;
+    font-weight: 500;
+}
+.top_headLearMorAnc{
+    font-size: 16px;
+    color: rgb(227, 32, 32);
+    margin-left: 8px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.top_headLearMor{
+    border:none;
+}
+
+nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:space-between;
+    padding-top: 15px ;
+    padding-left: 25px ;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    margin-top: 31px;
+    position: fixed;
+    z-index: +155;
+    top: 32px;
+    border-top: 2px solid rgb(101, 97, 97);
+    border-bottom: 1px solid grey;
+    
+}
+
+.Companylogo_div{
+    width: 10%;
+    height: 4vh;
+}
+.Companylogo_div>img{
+    height: 6vh;
+    width: 9vw;
+}
+
+
+.middleLogin_cont button{
+ border: 1px solid gray;
+ padding: 2px 10px;
+ border-radius: 15px;
+ height: 35px;
+} 
+.middleLogin_cont button span{
+    border-left: 1px solid gray;
+    padding: 2px 9px;
+}
+
+.middleLogin_cont button span i{
+    background-color: rgb(244, 75, 103);
+    padding: 5px;
+    border-radius: 15px;
+    color: black;
+}
+#searchbutton{
+    margin-left: 480px;
+    margin-top: 35px;
+}
+
+.right-contai{
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    padding: 4px 7px;
+
+}
+
+.right-contai a,
+.right-contai button{
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    margin: 0px 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.yourHome{
+    text-align: center;
+    padding-top: 3px;
+}
+
+.yourHome a:hover{
+    background-color:rgb(228, 227, 227);
+    padding: 3px 6px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+.loginButton:hover,
+.globeButton:hover{
+    background-color:rgb(228, 227, 227);
+    padding: 3px 6px;
+    transition: 0.8s;
+    border-radius: 12px;
+}
+
+
+.corselHomeMade{
+    width: 100%;
+    height: 10vh;
+    margin-top: 130px;
+    border-bottom: 1px solid grey;
+   
+}
+.corselHomeMade span{
+    width: 10px;
+    margin-left: 40px;
+}
+
+
+.corselHomeMade span i{
+    font-size: 19px;
+}
+.corselHomeMade div{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+
+
+
+.frontHotels{
+    width: 1100px;
+    /* position:r; */
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: 410px;
+    grid-gap:21px;
+    height: 3000px;
+    margin: 10px 80px;
+    background-color: rgb(226, 41, 41);
+}
+
+/* .frontHotels img{
+    height: 260px ;
+} */
+
+footer{
+    margin-top: 1600px;
+}
+
+.footerfirst{
+    margin-top: 10px ;
+}
+.footflex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+}
+
+.footlast{
+    padding-top: 180px;
+    padding-left: 480px;
+
+}

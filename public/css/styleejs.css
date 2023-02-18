@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+}
+
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px ;
+}
+
+
+.Companylogo_div{
+    width: 10%;
+    height: 4vh;
+}
+.Companylogo_div>img{
+    height: 6vh;
+    width: 9vw;
+}
+
+
+.right-contai{
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    padding: 4px 7px;
+
+}
+
+.right-contai a,
+.right-contai button{
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    margin: 0px 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.yourHome{
+    text-align: center;
+    padding-top: 3px;
+}
+
+.yourHome a:hover{
+    background-color:rgb(228, 227, 227);
+    padding: 3px 6px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+.loginButton:hover,
+.globeButton:hover{
+    background-color:rgb(228, 227, 227);
+    padding: 3px 6px;
+    transition: 0.8s;
+    border-radius: 12px;
+}
+
+.addressRatingdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imgupdiv{
+    padding: 10px 50px;
+}
+
+.secondfles{
+    display: flex;
+}
+.image-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    border: 1px solid white;
+    justify-content: center;
+    grid-gap: 10px;
+    
+}
+
+.image-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+
+}
+
+
+.first{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.details{
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+.personaldetails{
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.personaldetails div{
+    padding-bottom: 5px;
+}
+
+.extraDetails{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.sleepbed{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.sleepbed div{
+    height: 110px;
+    width:190px;
+ 
+}
+
+.bede1,
+.bede2{
+    margin: 10px;
+    padding-top: 6px;
+    padding-left: 15px;
+    padding-bottom: 6px;
+    align-items: center;
+    border:2px solid grey;
+    border-radius: 15px;
+}
+
+
+.placeoffers ul li{
+    list-style: circle;
+    padding: 4px 2px ;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+iframe{
+    width: 1150px;
+}
+
+.firstrevie,
+.secondrevie{
+    display: flex;
+    padding: 10px;
+}
+
+.laststyle{
+    display: flex;
+}
+
+
+.card{
+    box-shadow: 0px 5px 5px rgb(154, 151, 151);
+}
+
+
+footer{
+    margin-top: 20px;
+}
+
+.footerfirst{
+    margin-top: 10px ;
+}
+.footflex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+}
+
+.footlast{
+    padding-top: 80px;
+    padding-left: 480px;
+
+}

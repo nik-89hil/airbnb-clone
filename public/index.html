@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <title>Airbnb clone</title>
+</head>
+<body>
+    <div class="top_header">
+        <div class="top_header_div">
+            <div class="top_headLefText">
+                <h1><span>Show total prices up front</span></h1>
+            </div>
+            <div class="top_headRigText">
+                <button class="top_headLearMor">
+                    <span><a class="top_headLearMorAnc" href="/register"> Learn more</a></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="second_head">
+        <div class="Companylogo_div">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="airbnbLogoImage">
+        </div>
+        <div class="middleLogin_cont">
+            <p>
+                <button class="btn btn-light w-50px" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <span>anything</span>
+                  <span>anywhere</span>
+                  <span style="color:grey">Add guest
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+
+                </button>
+            </p>
+            <div style="min-height: 1px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 600px;;z-index:+500px;">
+                    <!-- search section -->
+                    
+                    <form action="/search/searchresult" method="get">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" name="destination" class="form-control" placeholder="Enter Your Destination" aria-label="Username" aria-describedby="basic-addon1" >
+                          </div>
+                          
+                          <div class="input-group mb-3">
+                            <input type="datetime-local" name="checkIn" class="form-control" placeholder="Recipient's username"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@ &nbsp;&nbsp; Check - In</span>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <input type="datetime-local" class="form-control" placeholder="Recipient's username" name="checkOUt" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@ Check - out</span>
+                        </div>
+                        <select class="form-select" name="guest" aria-label="Default select example">
+                            <option selected>Add no. of guests</option>
+                            <option value="1" >One</option>
+                            <option value="2" >Two</option>
+                            <option value="3" >Three</option>
+                            <option value="+" >More</option>
+
+                        </select>
+
+                        <button type="submit" id="searchbutton"  class="btn btn-danger">Search</button>
+
+                    </form>
+
+                  </div>
+                </div>
+            </div>
+        
+        
+           
+
+        </div>
+        <div class="right-contai">
+            <div class="yourHome">
+                <a href="/airbnbSetupYourHome">Airbnb your home</a>
+            </div>
+            <div class="globe_contai">
+                <button class="globeButton">
+                    <span><i class="fa-solid fa-globe"></i></span>
+                </button>
+            </div>
+            <div class="loginCont">
+                <!-- Example single danger button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-light  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-grip-lines"></i>&nbsp;
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/login">login</a></li>
+                    <li><a class="dropdown-item" href="/register">Register</a></li>
+                    <li><a class="dropdown-item" href="/airbnbSetupYourHome">Airbnb your home</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                </ul>
+            </div>
+                
+        </div>
+    </nav>
+
+
+    <div class="corselHomeMade" style="z-index: -400px;">
+        <div id="carouselExample" class="carousel slide" style="z-index: -400px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                    <span><i class="fa-solid fa-water-ladder"></i></span>
+                    <span><i class="fa-solid fa-sliders"></i></span>
+                    <span><i class="fa-solid fa-house-tsunami"></i></span>
+                    <span><i class="fa-solid fa-city"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-gopuram"></i></span>
+                    <span><i class="fa-brands fa-pagelines"></i></span>
+                    <span><i class="fa-solid fa-umbrella-beach"></i></span>
+                    <span><i class="fa-solid fa-snowflake"></i></span>
+                    <span><i class="fa-solid fa-tent"></i></span>
+                    <span><i class="fa-solid fa-fire"></i></span>
+                    <span><i class="fa-solid fa-utensils"></i></span>
+                    <span><i class="fa-solid fa-building-wheat"></i></span>
+                    <span><i class="fa-solid fa-house-chimney"></i></span>
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span><i class="fa-solid fa-toilet-portable"></i></span>
+                    <span><i class="fa-solid fa-map-location-dot"></i></span>
+                    <span><i class="fa-solid fa-train"></i></span>
+                    
+              
+                </div>
+            <div class="carousel-item">
+                <span><i class="fa-solid fa-tractor"></i></span>
+                <span><i class="fa-solid fa-person-booth"></i></span>
+                <span><i class="fa-solid fa-globe"></i></span>
+                <span><i class="fa-solid fa-plane-departure"></i></span>
+                <span><i class="fa-solid fa-bowling-ball"></i></span>
+                <span><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <span><i class="fa-solid fa-pizza-slice"></i></span>
+                <span><i class="fa-solid fa-bread-slice"></i></span>
+                <span><i class="fa-solid fa-suitcase-rolling"></i></span>
+                <span><i class="fa-solid fa-wifi"></i></span>
+                <span><i class="fa-solid fa-ticket"></i></span>
+                <span><i class="fa-solid fa-compass"></i></span>
+                <span><i class="fa-solid fa-mug-saucer"></i></span>
+                <span><i class="fa-solid fa-cable-car"></i></span>
+                <span><i class="fa-solid fa-passport"></i></span>
+                <span><i class="fa-solid fa-video-slash"></i></span>
+                <span><i class="fa-solid fa-icons"></i></span>
+                <span><i class="fa-solid fa-leaf"></i></span>
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+
+     
+
+    <div class="frontHotels">
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/59a5ffe3-5a7b-4f92-8576-c2a33e21216e.jpg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Pimplad Nasik, India &nbsp; &#9733; 5.0</h5>
+                <p class="card-text">1,032 Kilometers away <br> 26 Feb - 4 Mar</p>
+                <a href="#" class="btn btn-light">Rs. 19,738 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-45318262/original/1dc81fa3-b145-4824-b463-96c44f16331f.jpeg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Kashid, India &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9733; 4.0 </h5>
+                <p class="card-text">1,215 Kilometers away <br> 15 Feb - 22 Feb</p>
+                <a href="#" class="btn btn-light">Rs. 21,978 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/65c03e29-0921-476d-9184-e143f5f63184.jpg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Lovnavia, India</h5>
+                <p class="card-text">1,162 Kilometers away <br> 25 Feb - 22 Mar </p>
+                <a href="#" class="btn btn-light">Rs. 15,112 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-52531765/original/c0620174-75cf-4277-ac47-673ad38390ce.jpeg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Calangute, India</h5>
+                <p class="card-text">1,545 Kilometers away <br> 24 Feb - 20 Mar</p>
+                <a href="#" class="btn btn-light">Rs. 25,100 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-652466689450221103/original/5f90a4e6-3260-4f6e-ae4b-8e26c94eae60.jpeg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Kihim, India </h5>
+                <p class="card-text">500 meter away <br> 2 Mar - 20 Apr</p>
+                <a href="#" class="btn btn-light">Rs. 5,900 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/49a141da-c540-4530-a02d-1c0adafb3eda.jpg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Alibag, India</h5>
+                <p class="card-text">1,1145 Kilometers away <br>4 Mar - 29 Apr </p>
+                <a href="#" class="btn btn-light">Rs. 15,900 night</a>
+            </div>
+        </div>
+
+        
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-652466689450221103/original/5f90a4e6-3260-4f6e-ae4b-8e26c94eae60.jpeg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Kihim, India </h5>
+                <p class="card-text">500 meter away <br> 2 Mar - 20 Apr</p>
+                <a href="#" class="btn btn-light">Rs. 5,900 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/49a141da-c540-4530-a02d-1c0adafb3eda.jpg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Alibag, India</h5>
+                <p class="card-text">1,1145 Kilometers away <br>4 Mar - 29 Apr </p>
+                <a href="#" class="btn btn-light">Rs. 15,900 night</a>
+            </div>
+        </div>
+
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-652466689450221103/original/5f90a4e6-3260-4f6e-ae4b-8e26c94eae60.jpeg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Kihim, India </h5>
+                <p class="card-text">500 meter away <br> 2 Mar - 20 Apr</p>
+                <a href="#" class="btn btn-light">Rs. 5,900 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/49a141da-c540-4530-a02d-1c0adafb3eda.jpg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Alibag, India</h5>
+                <p class="card-text">1,1145 Kilometers away <br>4 Mar - 29 Apr </p>
+                <a href="#" class="btn btn-light">Rs. 15,900 night</a>
+            </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-652466689450221103/original/5f90a4e6-3260-4f6e-ae4b-8e26c94eae60.jpeg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Kihim, India </h5>
+                <p class="card-text">500 meter away <br> 2 Mar - 20 Apr</p>
+                <a href="#" class="btn btn-light">Rs. 5,900 night</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://a0.muscache.com/im/pictures/49a141da-c540-4530-a02d-1c0adafb3eda.jpg?im_w=720" class="card-img-top" alt="Img 1">
+            <div class="card-body">
+                <h5 class="card-title">Alibag, India</h5>
+                <p class="card-text">1,1145 Kilometers away <br>4 Mar - 29 Apr </p>
+                <a href="#" class="btn btn-light">Rs. 15,900 night</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <footer>
+        <div class="footerfirst">
+            <h5 style="margin-left:40px">Support</h5>
+            <div class="footflex">
+                <div><p>Help Center</p><br><p>Cancellation options</p></div>
+                <div><p>Our covid-19 Response</p><br><p>Aircover</p></div>
+            </div>
+            <hr>
+            <br><br>
+            <h5 style="margin-left:40px">Community & Hosting</h5>
+            <div class="footflex">
+                <div><a href="https://www.airbnb.co.in/">airbnb</a><br><p>Aircover for host</p></div>
+                <div><a href="/airbnbSetupYourHome">Airbnb your home</a><br><p>learn about new features</p></div>
+            </div>
+        </div>
+        <br>
+        <div class="footlast">
+            <i class="fa-solid fa-globe"></i> 
+            <span>English INR(Rs.) <br>
+                @2023 Airbnb,Inc. <br>
+                Privacy - Terms - Sitemap - Company details
+            </span> 
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

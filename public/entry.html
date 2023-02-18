@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/hostyourhome.css" type="text/css">
+    <title>Registration with Property</title>
+</head>
+<body>
+    <div class="firsttop">
+        <img src="data:image/png;base64,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" alt="airbnb-image">
+        <!-- for general login and register -->
+       
+        <div>
+            <button type="button" class="btn btn-light btn-lg"><a href="/AirbnbSetup" style="text-decoration: none; color: crimson;">Ready to Airbnb it?</a></button>
+            <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-house-circle-check" ></i>Register Your Property</button>
+            <div>
+                    <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">For Property Registration </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Register form here -->
+                                <form action="/propetySetupAirbnb" method="post">
+                                    <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email"  name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll contact you soon</div>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Update me on email</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-danger">Add with Airbnb </button>
+                                </form>
+            
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <h3 style="margin-top: 20px; margin-left: 40px ;">we provide login and register service here!! you entered in website after authentication</h3>
+
+    <br>
+    
+    
+   
+    
+    <h1 style="color:rgb(240, 76, 109); padding: 20px;">This Page is for  Property Registration .. WE will never share user related details</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/hostyourhome.css" type="text/css">
+    <title>Airbnb Host Your Home</title>
+</head>
+<body>
+    <div class="firsttop">
+        <img src="data:image/png;base64,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" alt="airbnb-image">
+        <!-- for general login and register -->
+       
+        <div>
+            <button type="button" class="btn btn-light btn-lg"><a href="/AirbnbSetup" style="text-decoration: none; color: crimson;">Ready to Airbnb it?</a></button>
+            <button type="button" class="btn btn-danger btn-lg"><i class="fa-solid fa-house-circle-check"></i> Airbnb Setup</button>
+        </div>
+    </div>
+
+    <div class="secondtop">
+        <div class="leftcon">
+            <h1 style="color:rgb(237, 68, 96);font-weight: 700;">Airbnb it.</h1>
+            <h1 style="font-weight: 600;font-size: 42px;">You could earn</h1>
+            <h1 style="font-weight: 600;font-size: 42px;">Rs. 25,000+</h1>
+            <p><a href="#" style="color:black">7 nights</a> at an estimated Rs.3,643 a night</p>
+            <input type="range" class="form-range form-label" id="customRange1">
+        </div>
+        <div class="rightcon">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46435.867070584434!2d77.1620539103574!3d28.642715766073792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029c4eb2b1f5%3A0xc8a7f2b29a4722a4!2sHotel%20Regent%20Grand!5e0!3m2!1sen!2sin!4v1676466423063!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <br><br>
+    <br><br>
+
+    <div class="thirdcont">
+        <h1 style="padding-left: 300px; font-weight: 600;">Airbnb it easily with Airbnb Setup</h1>
+        <br>
+        <div>
+            <img src="https://a0.muscache.com/im/pictures/65214d06-ffb4-4b70-93c0-01d368e76649.jpg?im_w=2560&im_q=highq" alt="">
+        </div>
+    </div>
+
+    <div class="forthcont">
+        <div>
+            <h4>One-to-one guidance from a Superhost</h4>
+            <br>
+            <p>
+                We'll match you with a Superhost in your area, who will guide you
+                from your first question to your guest-by phone,video call or chat.
+            </p>
+        </div>
+        <div>
+            <h4>An experienced guest for your first booking</h4>
+            <br>
+            <p>
+                For your first booking, you can choose to welcome an experienced guest who has at least three stays and a good 
+                track record on Airbnb .
+            </p>
+        </div>
+        <div>
+            <h4>Specialise support from Airbnb</h4>
+            <br>
+            <p>
+                New Hosts get one-tap access to specially trained Community Support agents
+                who can help with everything from account issues to billing support
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="fifthcont">
+        <h1 style="font-weight: 600; padding-left:520px;"><span style="color:rgb(246, 84, 111);font-weight: 600;">air</span>cover</h1>
+        <p style="padding-left:566px;">For Host</p>
+
+        <h1 style="font-weight: 600;padding-left:250px;">Airbnb it with top-to-bottom protection</h1>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="sixthcont">
+        <div class="sixthfirst">
+            <h1>Your questions,<br> answered</h1>
+        </div>
+        <div class="sixthsecond">
+            <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 500px; background-color: rgb(228, 227, 227);">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Is my place right for Airbnb?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Airbnb guests are interested in all kinds of places. We have 
+                        listings for tiny homes, cabins, tree houses and more. Even a spare
+                        room can be a great place to stay.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Do I have to host all the time?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Not at all - you control your calendar. You can host once a year, a few nights a month or more often.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      How much should I interact with guests?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">It's up to you. Some Hosts prefer to message guests only at key moments. </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="sixththird">
+        <img src="https://a0.muscache.com/im/pictures/c19751e5-cd4f-41d0-898f-2580b60cae08.jpg?im_w=1200&im_q=highq" alt="">
+    </div>
+    <br><br>
+    <br><br>
+
+    <footer>
+        <div class="footerfirst">
+            <h5 style="margin-left:40px">Support</h5>
+            <div class="footflex">
+                <div><p>Help Center</p><br><p>Cancellation options</p></div>
+                <div><p>Our covid-19 Response</p><br><p>Aircover</p></div>
+            </div>
+            <hr>
+            <br><br>
+            <h5 style="margin-left:40px">Community & Hosting</h5>
+            <div class="footflex">
+                <div><a href="https://www.airbnb.co.in/">airbnb</a><br><p>Aircover for host</p></div>
+                <div><a href="/airbnbSetupYourHome">Airbnb your home</a><br><p>learn about new features</p></div>
+            </div>
+        </div>
+        <br>
+        <div class="footlast">
+            <i class="fa-solid fa-globe"></i> 
+            <span>English INR(Rs.) <br>
+                @2023 Airbnb,Inc. <br>
+                Privacy - Terms - Sitemap - Company details
+            </span> 
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
